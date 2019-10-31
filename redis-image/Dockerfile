@@ -2,6 +2,7 @@
 FROM alpine
 
 # download and install a dependency
+RUN apk add --update gcc
 RUN apk add --update redis
 
 # tell image what to do on start
